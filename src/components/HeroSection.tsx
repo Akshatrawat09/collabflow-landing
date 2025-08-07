@@ -79,8 +79,9 @@ const HeroSection = () => {
               className="flex-1 bg-card/20 backdrop-blur-md border-border/50 text-foreground placeholder:text-muted-foreground"
               required
             />
-            <Button type="submit" variant="hero" size="lg">
-              Join waitlist
+            <Button type="submit" variant="floating" size="responsive" className="relative overflow-hidden group">
+              <span className="relative z-10">Join waitlist</span>
+              <div className="absolute inset-0 bg-gradient-to-r from-primary via-accent to-primary bg-size-200 animate-gradient-shift opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </Button>
           </motion.form>
 
@@ -91,13 +92,14 @@ const HeroSection = () => {
             transition={{ delay: 0.9, duration: 1, ease: 'easeOut' }}
             className="relative max-w-4xl mx-auto"
           >
-            <div className="relative feature-card rounded-2xl overflow-hidden">
+            <div className="relative feature-card rounded-2xl overflow-hidden transform-gpu preserve-3d hover:scale-105 hover:-translate-y-4 hover:rotate-1 transition-all duration-500 ease-out shadow-2xl hover:shadow-3xl">
               <img
                 src={dimensionPreview}
                 alt="A preview of Dimension app"
                 className="w-full h-auto rounded-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent rounded-2xl"></div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 rounded-2xl opacity-0 hover:opacity-100 transition-opacity duration-300"></div>
             </div>
           </motion.div>
         </motion.div>

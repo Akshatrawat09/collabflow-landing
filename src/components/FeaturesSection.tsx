@@ -56,22 +56,29 @@ const FeaturesSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" style={{ perspective: '1000px' }}>
           {features.map((feature, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              initial={{ opacity: 0, y: 40, rotateX: 45 }}
+              whileInView={{ opacity: 1, y: 0, rotateX: 0 }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
-              whileHover={{ y: -8 }}
-              className="group"
+              whileHover={{ 
+                y: -15, 
+                rotateX: -5, 
+                rotateY: 5,
+                boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+                scale: 1.02
+              }}
+              className="group transform-gpu preserve-3d"
+              style={{ transformStyle: 'preserve-3d' }}
             >
-              <Card className="feature-card h-full p-6 group-hover:border-primary/50">
+              <Card className="feature-card h-full p-6 group-hover:border-primary/50 shadow-lg hover:shadow-2xl transition-all duration-300">
                 <CardContent className="p-0">
                   <div className="mb-4">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                      <feature.icon className="w-6 h-6 text-primary" />
+                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-all duration-300 group-hover:scale-110 group-hover:rotate-3 group-hover:shadow-lg">
+                      <feature.icon className="w-6 h-6 text-primary group-hover:animate-bounce-3d" />
                     </div>
                   </div>
                   <h3 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors">

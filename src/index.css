@@ -45,6 +45,18 @@
     /* Shadows with purple glow */
     --shadow-glow: 0 0 40px hsl(267 89% 65% / 0.3);
     --shadow-card: 0 10px 30px -10px hsl(222 84% 4.9% / 0.5);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+    /* 3D Effects */
+    --shadow-3d: 0 8px 20px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.1);
+    --shadow-3d-hover: 0 15px 35px rgba(0, 0, 0, 0.2), 0 8px 15px rgba(0, 0, 0, 0.15);
+    --shadow-3d-pressed: 0 2px 8px rgba(0, 0, 0, 0.2), inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    --transform-3d: perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(0px);
+    --transform-3d-hover: perspective(1000px) rotateX(-5deg) rotateY(5deg) translateZ(20px);
+    --transform-3d-pressed: perspective(1000px) rotateX(2deg) rotateY(-2deg) translateZ(5px);
 
     --radius: 0.75rem;
 

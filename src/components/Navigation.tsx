@@ -35,7 +35,7 @@ const Navigation = () => {
           </a>
         </div>
 
-        <Button variant="glass" size="sm">
+        <Button variant="glass" size="responsive" className="perspective-1000 hover:animate-tilt">
           Join waitlist
         </Button>
       </div>

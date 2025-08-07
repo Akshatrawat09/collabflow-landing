@@ -20,8 +20,9 @@ const Footer = () => {
             Join thousands of developers who are already building the future with Dimension.
           </p>
           
-          <Button variant="hero" size="xl" className="mb-12">
-            Get started for free
+          <Button variant="floating" size="responsive" className="mb-12 group relative overflow-hidden">
+            <span className="relative z-10 group-hover:text-white transition-colors duration-300">Get started for free</span>
+            <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
           </Button>
 
           {/* Social Links */}
