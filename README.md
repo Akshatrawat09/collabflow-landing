@@ -1,73 +1,87 @@
-# Welcome to your Lovable project
+# Dimension-Inspired Animated Landing Page
 
-## Project info
+A modern, animated, and fully responsive landing page inspired by [dimension.dev](https://www.dimension.dev/).  
+Built with **Next.js**, **TypeScript**, **Tailwind CSS**, and **Framer Motion**.
 
-**URL**: https://lovable.dev/projects/82bbc7d5-8a75-4359-96f7-80894262b89f
+---
 
-## How can I edit this code?
+## ✨ Features
 
-There are several ways of editing your application.
+- **Animated Hero Section:** Modern gradient background with floating shapes/particles, headline, subheadline, and animated CTA.
+- **Features Showcase:** Responsive grid or cards for key features, animated icons, and interactive hover/fade effects.
+- **Animated Workflow:** Step-by-step workflow animation—horizontal scroll or slider with scroll-in transitions.
+- **Contributors Banner:** Animated carousel/banner with community avatars/logos.
+- **Minimalist Footer:** Translucent, animated social icons, repeated CTA.
+- **Global Animations:** Page-load fade-ins, parallax, and smooth UI transitions via Framer Motion.
+- **Accessibility:** Readable contrast, focus-visible, keyboard accessible, ARIA labeling.
+- **Full Responsiveness:** Works beautifully from XS phones to XL desktops.
+- **Dark/Light Modes:** Seamless theming for every environment.
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/82bbc7d5-8a75-4359-96f7-80894262b89f) and start prompting.
+## 🚀 Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
 
-**Use your preferred IDE**
+Open [http://localhost:3000](http://localhost:3000) to view it.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## 🛠️ Tech Stack
 
-Follow these steps:
+- [Next.js](https://nextjs.org/) — App framework (with TypeScript)
+- [Tailwind CSS](https://tailwindcss.com/) — Utility-first styling & responsive design
+- [Framer Motion](https://www.framer.com/motion/) — Advanced animations/transitions
+- [React Icons](https://react-icons.github.io/react-icons/) — Social footer icons
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 📁 Project Structure
 
-# Step 3: Install the necessary dependencies.
-npm i
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## 🖌️ Customization
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+- Change hero text, backgrounds, and animations in `/components/Hero.tsx`.
+- Edit features, steps, and icon assets in `/components/Features.tsx`, `/components/Workflow.tsx`, etc.
+- Tweak gradients, colors, or layout in `tailwind.config.js` and component props.
+- Replace or add community avatars/logos in `/public`.
+- Adjust/expand animations using Framer Motion in each component.
 
-**Use GitHub Codespaces**
+---
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## 🔗 Design Prompt & Guidance
 
-## What technologies are used for this project?
+> **Inspired by [dimension.dev](https://www.dimension.dev/):**
+> - Modern, animated landing page in Next.js (TypeScript) + Tailwind CSS.
+> - Hero section with gradient, floating shapes, “Dimension is the new standard for collaboration,” and animated “Join Waitlist” CTA.
+> - Responsive feature grid/cards, each with entrance/hover animations.
+> - Animated contributors/community carousel/banner.
+> - Minimalist animated footer.
+> - Framer Motion for smooth page-load, parallax, background/object, and element animations.
+> - Accessibility and device responsiveness are key.  
+> - Emulate the layout, structure, and premium feel of dimension.dev closely.
 
-This project is built with:
+---
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 🧑‍💻 Contributing
 
-## How can I deploy this project?
+Feedback, issues, and PRs are welcome!
 
-Simply open [Lovable](https://lovable.dev/projects/82bbc7d5-8a75-4359-96f7-80894262b89f) and click on Share -> Publish.
+1. Fork the repo
+2. Create your feature branch (`git checkout -b feature/MyFeature`)
+3. Commit & push (`git commit -m 'Your message'`)
+4. Open a Pull Request
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes, you can!
+## 📄 License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+[MIT](LICENSE)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+---
+
+**Not affiliated with dimension.dev or its creators — for educational/demo purposes.**
+
+
+
